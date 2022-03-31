@@ -41,7 +41,6 @@ namespace MTR.Models
         [JsonPropertyName("Deleted")]
         public bool Deleted { get; set; }
 
-        [JsonIgnore]
         [JsonPropertyName("Geometry")]
         public Geometry Geometry { get; set; }
 

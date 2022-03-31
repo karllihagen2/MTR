@@ -25,7 +25,7 @@ namespace MTR.Station
                 $"<LOGIN authenticationkey='{mtrApiKey}' />" +
                   "<QUERY objecttype='TrainStation' schemaversion='1'>" +
                 "<FILTER>" +
-                    $"<NEAR name='Geometry.SWEREF99TM' value='{firstCoordinate}' mindistance='1' maxdistance='20' />" +
+                    $"<WITHIN name='Geometry.SWEREF99TM' shape='center' value='{firstCoordinate}' radius='100'/>" +
                 "</FILTER>" +
               "</QUERY>" +
             "</REQUEST>";
